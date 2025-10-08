@@ -1,0 +1,153 @@
+
+  .nitem {
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: #FFFFFF;
+    flex-shrink: 1;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; 
+    width: 48%;
+    margin-bottom: 20px; 
+
+    box-shadow: 4px 4px 0px 2px #1E1E1E;
+
+  }
+  
+  .nitem h1 {
+    font-size: 1.2em; 
+    text-align: center;
+    font-family: 'Raleway';
+  }
+  
+  .nitem .nimg {
+    width: 80%; 
+  }
+  
+  .nitem p {
+    color: #4C4C4D;
+    line-height: 1.4; 
+    font-size: 14px; 
+    font-weight: 500;
+    font-family: 'Outfit';
+    text-align: center; 
+  }
+  
+  .nitem button {
+    width: 80%; 
+    gap: 5px; 
+    border-radius: 10px;
+    border: 2px solid;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFDECC;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nitem button img {
+    width: 16px; 
+    height: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  @media (min-width: 601px) {
+    .nitem {
+      width: 48%;
+      padding: 30px; 
+      gap: 20px;
+    }
+    .nitem h1 {
+      font-size: 1.4em;
+    }
+    .nitem p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .nitem button {
+      font-size: 16px;
+      gap: 8px;
+      padding: 12px;
+    }
+    .nitem button img {
+      width: 18px;
+      height: 11px;
+    }
+  }
+  
+
+  @media (min-width: 992px) {
+    .nitem {
+      width: 48%; 
+      padding: 40px;
+      gap: 25px;
+    }
+    .nitem h1 {
+      font-size: 1.6em;
+    }
+    .nitem p {
+      font-size: 17px;
+    }
+    .nitem button {
+      font-size: 17px;
+      padding: 14px;
+    }
+  }
+  
+  
+  @media (min-width: 1239px) {
+    .nitem {
+      width: 48%; 
+      padding: 50px;
+      gap: 25px;
+      height: 500px;
+    }
+    .nitem h1 {
+      font-size: 1.8em;
+    }
+    .nitem p {
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .nitem button {
+      font-size: 17px;
+      gap: 10px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+  }
+
+
+  @media (max-width: 700px) {
+    .nitem {
+      width: 100%;
+      padding: 30px; 
+      gap: 20px;
+    }
+}    
+
+
+@media (min-width: 701px) and (max-width: 1238px) {
+    .nitem {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}  
+
+
+
+.nitem:hover button {
+  transform: translateY(-5px); 
+}
+
+.nitem:hover button img {
+  transform: translateX(5px); 
+}

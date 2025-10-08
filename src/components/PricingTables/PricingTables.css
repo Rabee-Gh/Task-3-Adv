@@ -1,0 +1,109 @@
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+}
+
+.pricing-table-container {
+      background-color: #ffffff;
+    border: 2px solid #262626;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+
+    padding: 60px 30px 60px;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    display: table;
+    border: 1px solid;
+}
+
+
+.table-header-row,
+.table-data-row {
+  display: table-row;
+  border-bottom: 1px solid #262626; 
+}
+
+.table-data-row:last-child {
+  border-bottom: none; 
+}
+
+.table-header-cell,
+.table-data-cell {
+  display: table-cell; 
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle; 
+  border-right: 1px solid #262626; 
+}
+
+.table-header-cell:last-child,
+.table-data-cell:last-child {
+  border-right: none; 
+}
+
+
+.table-header-cell {
+  background-color: #FFEFE5; 
+  font-weight: 600;
+  font-size: 14px;
+  color: #50382c;
+}
+
+.table-data-cell {
+  font-size: 14px;
+  color: #333;
+}
+
+
+.additional-services-title {
+    background-color: #FFEFE5;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a2e20;
+    border: 1px solid #262626;
+    border-bottom: none;
+}
+
+
+
+.services-table .service-name-cell {
+  width: 70%; 
+  font-weight: 500;
+}
+
+.services-table .service-price-cell {
+  width: 30%;
+  text-align: left; 
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .pricing-table-container {
+    overflow-x: scroll; 
+    
+}
+
+.pricing-table-container::-webkit-scrollbar {
+    height: 12px; 
+    background-color: #f1f1f1;
+    border-radius: 5px; 
+}
+
+.pricing-table-container::-webkit-scrollbar-thumb {
+    background-color: #FFAE80;
+    border-radius: 5px; 
+}
+
+
+.pricing-table-container::-webkit-scrollbar-button {
+    display: none; 
+}
+    
+}

@@ -1,0 +1,79 @@
+.subhero {
+    display: flex;
+    background-color: #FFEFE5;
+    padding: 24px 50px;
+    width: fit-content; 
+    justify-content: space-between; 
+    gap: 40px; 
+    align-items: center; 
+    border-radius: 12px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 2px 0px #ffbe99; 
+    margin: 20px auto; 
+  }
+  
+  .subhero .subhero-content {
+    text-align: center; 
+  }
+  
+  .subhero .subhero-content h1 {
+    font-size: 2em;
+    color: #333; 
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .subhero-content:hover h1 {
+    transform: scale(1.1); 
+}
+  
+  .subhero .subhero-content p {
+    font-size: 1em; 
+    color: #555; 
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .subhero {
+      flex-direction: column; 
+      width: 90%; 
+      margin: 20px auto;
+      padding: 20px;
+      gap: 20px; 
+    }
+  
+    .subhero .subhero-content {
+      width: 100%; 
+    }
+  
+    .subhero .subhero-content h1 {
+      font-size: 1.8em;
+    }
+  
+    .subhero .subhero-content p {
+      font-size: 0.9em;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .subhero .subhero-content h1 {
+      font-size: 1.6em;
+    }
+  
+    .subhero .subhero-content p {
+      font-size: 0.85em;
+    }
+    
+  }
+  @media (max-width: 769px) {
+    .subhero .subhero-content {
+        text-align: center;
+        border-bottom: 2px solid black;
+        padding-bottom: 20px;
+    }
+    .subhero .subhero-content:last-child {
+        border-bottom: none; 
+      }
+
+  }

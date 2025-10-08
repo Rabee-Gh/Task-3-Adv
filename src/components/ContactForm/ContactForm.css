@@ -1,0 +1,162 @@
+.form-container {
+    background-color: #ffffff;
+    padding: 70px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    margin: 100px 0px;
+    position: relative;
+}
+
+.form-icons {
+    display: flex
+;
+    justify-content: center;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-icon {
+  display: inline-flex; 
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+  text-decoration: none;
+  color: #555;
+  border: 1px solid #e0e0e0; 
+  border-radius: 4px; 
+  font-size: 18px; 
+  background-color: #f9f9f9; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+  .form-icons a {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 46px;
+    border-radius: 8px;
+    background-color: #FFDECC;
+    color: #262626;
+    text-decoration: none;
+    font-size: 1em;
+    border: 2px solid;
+  }
+
+
+    a.facebook:hover{ background-color: #3b5998; color: white; border-color: #3b5998; } 
+    a.twitter:hover{ background-color: #1da1f2; color: white; border-color: #1da1f2; } 
+    a.linkedin:hover{ background-color: #0077b5; color: white; border-color: #0077b5; }
+
+
+
+
+
+
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  flex-basis: 100%; 
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #e0e0e0; 
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box; 
+  background-color: #ffffff; 
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="email"]::placeholder,
+.form-group input[type="tel"]::placeholder,
+.form-group textarea::placeholder {
+  color: #999; 
+}
+
+.form-group select {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); /* سهم مخصص بسيط */
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 12px 12px;
+  padding-right: 30px;
+}
+
+.form-group textarea {
+  min-height: 120px; 
+  resize: vertical; 
+}
+
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f9a077;
+  color: #4a2e20; 
+  border: 1px solid #f9a077; 
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  text-transform: uppercase; 
+}
+
+.submit-button:hover {
+  background-color: #f78f60;
+  border-color: #f78f60;
+}
+
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0; 
+  }
+  .form-group {
+    margin-bottom: 20px; 
+  }
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+  .social-icons {
+    margin-bottom: 20px;
+  }
+}

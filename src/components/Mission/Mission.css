@@ -1,0 +1,50 @@
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 100px 0px 200px;
+
+
+    align-items: stretch; 
+}
+.mcard {
+    border-radius: 12px;
+    border: 2px solid #262626;
+    gap: 50px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 0px 2px #1E1E1E;
+}
+.mcard .mtop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.mcard .mbuttom p{
+    font-family: "Outfit";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+    
+
+} 
+
+
+@media (max-width:1200px) {
+    .mcard {
+        gap: 50px;
+        width: 100%;
+        padding: 30px 30px;
+        /* margin-left: -25px; */
+    }
+    .mission {
+        flex-direction: column;
+        gap: 40px;
+    }
+}

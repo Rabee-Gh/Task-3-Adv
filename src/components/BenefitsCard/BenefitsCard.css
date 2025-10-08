@@ -1,0 +1,48 @@
+
+.bnf-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px black;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 26.5%;
+    position: relative;
+    border: 2px solid black;
+    
+    
+  }
+  
+  .bnf-card:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 5px 12px #FFAE80;
+  }
+  
+  .bnf-card img {
+    max-width: 20.6349%;
+    max-height: 20.6349%;
+    position: absolute;
+    top: -10.300%;
+    left: 6%;
+  }
+  
+  .bnf-card h3 {
+    color: #1A1A1A;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding: 10% 10% 2.4% 4%;
+    width: 100%;
+    text-align: start;
+    font-family: "Raleway";
+  }
+  
+  .bnf-card p {
+    color: #4C4C4D;
+    font-size: 0.8em;
+    line-height: 1.5;
+    padding: 0% 0% 9.4% 0%;
+    font-weight: 500;
+  }
+
+

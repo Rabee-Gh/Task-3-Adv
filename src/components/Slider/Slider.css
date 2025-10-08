@@ -1,0 +1,151 @@
+.big {
+  position: relative;
+  margin-bottom: 2.9%;
+}
+
+.slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out; 
+  width: 100%; 
+  gap: 30px;
+}
+
+.testimonial {
+  flex-shrink: 0;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px black;
+  border: 2px solid;
+  margin-bottom: 20px;
+  width: 100%; 
+  gap: 10px;
+}
+
+.testimonial:last-child {
+  margin-right: 0;
+}
+
+.slider-button-left,
+  .slider-button-right {
+    padding: 8px 10px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 2px solid;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-button-left{
+    left: -25px;
+  }
+  .slider-button-right{
+    right: -25px;
+  }
+
+
+@media (min-width: 1200px) {
+  .slider-wrapper {
+    width: 900px; 
+  }
+  .testimonial {
+    width: calc(33.33% - 20px); 
+  }
+  .controls-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+
+.testimonial .char {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.author {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.testimonial .star {
+  padding: 5px;
+  max-width: 40%;
+  height: auto;
+}
+
+.content {
+  color: #333333;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 1199px) {
+  .big{
+    margin-bottom: 150px;
+  }
+  .slider-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-button-left,
+  .slider-button-right {
+    position: absolute;
+    margin: 30px 10px;
+    /* left: 50%;
+    transform: translateX(-50%);
+    top: 100%; */
+  }
+ 
+
+  .slider-wrapper {
+    width: 100%;
+  }
+
+  .testimonial {
+    width: 100%; 
+    margin-right: 0; 
+    padding: 40px 6px;
+  }
+}
+
+@media (max-width:569px) {
+  .slider-button-right {
+    top: 100%;
+    left: 50%;
+    width: fit-content;
+}
+.slider-button-left {
+  top: 100%;
+  left: 30%;
+}
+}
+

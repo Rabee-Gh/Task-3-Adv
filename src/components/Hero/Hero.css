@@ -1,0 +1,100 @@
+.Hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0; 
+    margin: 20px 0;
+    border-radius: 12px;
+    margin-bottom: 2.9%;
+
+  }
+  
+  .Hero .img {
+    flex: 1;
+    max-width: 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+  }
+  .Hero .img:hover {
+    transform: scale(1.05); 
+}
+  .Hero .img img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .Hero .Hero-content {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 40px;
+  }
+  
+  .Hero .Hero-content .tex1 {
+    font-size: 1.2em;
+    color: #262626;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #262626;
+    width: fit-content;
+    font-weight: 500;
+
+  }
+  
+  .Hero .Hero-content .ltitle {
+    font-size: 2.5em;
+    color: #262626;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: "Raleway"; 
+  }
+
+
+  .Hero .Hero-content .ltitle span {
+   
+    font-family: "Raleway"; 
+  }
+
+  .Hero .Hero-content .lpar {
+    font-size: 1em;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    word-break: break-word;
+  }
+  
+
+@media (max-width: 985px) {
+    .Hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;  
+    }
+  
+    .Hero .img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .Hero .Hero-content .tex1 {
+  margin: 0px auto;
+  font-size: 0.9em;
+        
+    }
+    .Hero .Hero-content {
+      max-width: 80%;
+      padding-left: 0;
+    }
+  
+    .Hero .Hero-content .ltitle {
+      font-size: 1.6em;
+    }
+  
+    .Hero .Hero-content .lpar {
+      font-size: 0.9em;
+      line-height: 1.3;
+    }
+  } 
+  

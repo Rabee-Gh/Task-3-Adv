@@ -1,0 +1,75 @@
+
+.Sections {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+
+.section-parent{
+    position: relative;
+    min-height: 220px;
+    width: 82.8125%;
+    margin: 50px auto 25px;
+}
+.Sections .start{
+    background-color: #FFFFFF;
+    border: 2px solid;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600; 
+    font-size: 14px;
+    Line-height:1.5;
+    margin:0px auto 12px;
+    Letter-spacing:0px;
+    color: #333333;
+}
+
+.Sections .start:hover{
+  background-color: #FFAE80;
+  border: none;
+  color: white;
+}
+.Sections h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2; 
+    letter-spacing: -1px; 
+    margin-bottom: 16px; 
+    font-family: "Raleway";
+    
+}
+.Sections .section-par{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    width: 100%;
+} 
+
+
+
+@media (max-width: 1440px) {
+    .Sections {
+      width: 90%;
+    }
+  
+    .Sections h1 {
+      font-size: 32px; 
+    }
+  
+    .Sections .section-par {
+      font-size: 15px; }
+  
+    .section-parent {
+      width: 90%; 
+      margin: 30px auto;
+    }
+  }
+
+
+
+

@@ -1,0 +1,103 @@
+.over {
+  background-color: #FFDECC;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px -20px;
+  min-height: 58px; 
+  border: 2px solid black;
+  border-radius: 8px;
+  position: relative; 
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+.over .over-i-left,
+.over .over-i-right,
+.over .bg-ic,
+.over .sm-ic {
+  position: absolute;
+  pointer-events: none; 
+  z-index: 0; 
+  display: block; 
+ 
+}
+
+
+.over .over-i-left {
+  left: 2px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.over .over-i-right {
+  right: -2px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.over .bg-ic {
+  top: 0;
+  left: 26%;
+}
+.over .sm-ic {
+  bottom: -4px;
+  right: 30%;
+}
+
+
+.over .overtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+  padding: 0 10px;
+  min-width: 0;
+}
+
+.over .overtext span {
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  max-width: 100%;
+  color: #262626;
+}
+
+
+@media (max-width: 1439.98px) {
+
+
+  .over {
+    padding: 10px -82px;
+  }
+
+  .over .overtext span {
+    font-size: 1rem;
+  }
+
+  .over .bg-ic {
+    top: -3px;
+    left: 0%;
+  }
+  .over .sm-ic {
+    bottom: -4px;
+    right: -1%;
+    z-index: 20;
+  }
+
+
+}
+
+
+@media (max-width: 1439.98px) {
+  .over .over-i-right {
+    right: -50px;}
+
+    .over .over-i-left {
+      left: -50px;}
+}
+
