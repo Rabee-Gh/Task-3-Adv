@@ -16,7 +16,7 @@ const Mission = () => {
         <div className="mcard">
                 <div className="mtop">
                     <h1>Vision</h1>
-                    <img src="/assets/images/Icon (1).png" alt="any" height="60px"/>
+                    <img src="/assets/images/Icon(1).png" alt="any" height="60px"/>
                 </div>
                 <div className="mbuttom">
                     <p>Our vision is to be a beacon of educational excellence, where children are encouraged to explore, discover, and express their unique talents. We aim to foster a generation of lifelong learners equipped with critical thinking, empathy, and a deep appreciation for diversity.</p>

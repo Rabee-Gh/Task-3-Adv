@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="container">
         
-            <Hero limg="/assets/images/Image Container.png" text1="Welcome to Little Learners Academy" ltitle="Where Young Minds Blossom and " colortitle="Dreams Take Flight." lpar="Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!" />
+            <Hero limg="/assets/images/ImageContainer.png" text1="Welcome to Little Learners Academy" ltitle="Where Young Minds Blossom and " colortitle="Dreams Take Flight." lpar="Our kinder garden school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!" />
             {/*      start        Benefits     */}
             <Sections  start="Children Deserve Bright Future" head="Our Benefits" talk="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."/>
             <Benefits />

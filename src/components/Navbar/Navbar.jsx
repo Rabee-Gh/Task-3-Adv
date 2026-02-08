@@ -12,7 +12,7 @@ const Navbar = ({ section }) => {
   return (
     <nav className='navbar'>
       <div className="logo">
-        <img src="/assets/images/Logo Container.png" alt="any" />
+        <img src="/assets/images/LogoContainer.png" alt="any" />
       </div>
 
       <button className='over-btn' onClick={toggleMenu}>
